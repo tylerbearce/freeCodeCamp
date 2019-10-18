@@ -1,0 +1,86 @@
+/* Nav-Bar */
+nav {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  border: 2px solid black;
+  background: #BBB;
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+
+h1 {
+  font-family: helvetica, sans-serif;
+  font-size: 1.6em;
+  padding: 8px 16px;
+  }
+
+nav ul{
+  font-family: helvetica, sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  font-size: 1.4em;
+  color: black;
+  text-decoration: none;
+  border-top: 1px solid black;
+  display: block;
+  padding: 8px 16px;
+}
+
+nav a:hover{
+  color: white;
+  background-color: black;
+}
+
+/* Body */
+body {
+  background-color: #DDD;
+  margin: 0;
+}
+
+main {
+  width: 72%;
+  height: 100%;
+  position: relative;
+  float: right;
+  margin-right: 0.5em;
+}
+
+h2 {
+  font-family: helvetica, sans-serif;
+  margin-top: 2.5em;
+  font-size: 1.5em;
+}
+
+div.code-segment {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding: .8em .8em .8em .8em;
+}
+
+/* Footer */
+p.sig {
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+/* Media Query */
+@media (min-width: 800px) {
+  nav{
+    width: 20%;
+  }
+  
+  main{
+    width: 78%;
+    margin-right: 1em;
+  }
+
+}

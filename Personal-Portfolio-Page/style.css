@@ -1,0 +1,123 @@
+/* Nav-Bar */
+header {
+  background-color: #191a1d;
+  color: white;
+  top: 0;
+  margin-top: -0.5em;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  z-index: 999;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+a.navbar-link {
+  text-decoration: none;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+a.navbar-link:hover {
+  color: white;
+  border-bottom: 3px solid #ccc;
+}
+
+
+/* Body */
+body {
+  background-color: #ccc;
+  text-align: center;  
+  margin: auto;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+}
+
+section {
+/*   padding-top: 5em; */
+/*   margin-top: -3em; */
+  text-align: center;
+}
+
+#navbar-gap {
+  padding-top: 3.5em;
+}
+
+#welcome-section {
+  height: 100vh;
+  width 100%;
+  background-color: #191a1d;
+  color: #ccc;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+
+#projects {
+  
+}
+
+.project-tile {
+  font-size: 1.3em;
+  padding: 1em;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #222;
+  font-family: Arial, sans-serif;
+  padding: 1em;
+}
+
+.project-link:hover {
+  color: #ccc;
+  background-color: #191a1d;
+}
+
+#contacts {
+  padding-bottom: 1.5em;
+}
+
+#profile-link {
+  text-decoration: none;
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-size: 1.3em;
+  padding: 1em;
+}
+
+#profile-link:hover {
+  color: #ccc;
+  background-color: #191a1d;
+}
+
+/* Footer */
+p.sig {
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+/* Footer */
+@media (min-width: 1200px) {
+  p{
+    width: 75%;
+    margin: auto;
+    text-align: left;
+  }
+}
