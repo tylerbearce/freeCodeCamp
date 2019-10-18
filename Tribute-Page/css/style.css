@@ -1,0 +1,192 @@
+#main{
+  color: white;
+  background-color: black;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  }
+
+
+h1 { 
+  font-size: 3.5em;
+  font-family: arial, sans-serif; 
+  text-align: center;
+}
+
+#studio-lifetime{
+  text-align: center;
+  margin-top: -1.2em;
+  margin-bottom: 1em;
+  font-size: 1.8em;
+  font-family: Helvetica, sans-serif; 
+}
+
+.img-container{
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 5% 30% 30% 30% 5%;
+  grid-template-areas:
+      "empty games1 logo games2";
+}
+
+div.logo{
+  grid-area: logo;
+  margin-top: 0.5em;
+  background-image: url(https://i.ibb.co/Vt3gHCP/peter-moly.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+}
+
+
+#image{
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  height: auto;
+  width: 24em;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  box-shadow: 0 0 1em white;
+  transition: all 1s ease-out;
+}
+
+
+#image:hover {
+ opacity: 0;
+}
+
+#image:hover + #img-caption {
+ opacity: 0;
+}
+
+.game-table1 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  grid-area: games1;
+  margin-top: 2.5em;
+}
+
+.game-table2 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  grid-area: games2;
+  margin-top: 2.5em;
+}
+
+.box-art{
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  height: 85%;
+  width: 65%;
+  display: block;
+  margin: auto;
+  box-shadow: 0 0 1em white;
+  transition: all 0.3s ease-out;
+}
+
+.box-art:hover {
+  transform: scale(2.5);
+  border-radius: 0;
+}
+
+
+#tribute-info{
+  padding-top: 2em;
+  margin: auto;
+  width: 92%;
+}
+
+.shadow-box {
+  text-align: center;
+  color: black;
+  background-color: hsla(120, 100%, 100%, 0.7);
+  border-style: solid;
+  border-color: white;
+  border-radius: 1em;
+}
+
+p{
+  margin: 1em;
+  text-align: left;
+}
+
+h2{
+  margin: 1em;
+  font-family: Helvetica, sans-serif;
+}
+
+#tribute-link{
+  margin: auto;
+}
+
+.photo-container1{
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.photo-container2{
+  padding-top: 2em;
+}
+
+.photo{
+  text-align: center;
+  display: block;
+  margin: auto;
+  border-style: solid;
+  border-color: white;
+  box-shadow: 0 0 1em white;
+  transition: all 0.3s ease-out;
+}
+
+.photo:hover {
+  border-radius: 0;
+  transform: scale(1.2);
+}
+
+div.shipped-titles {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(9, 11%);
+  grid-template-rows: repeat(2, 50%);
+  grid-area: games1;
+  padding: 1em;
+}
+
+div.titles-table {
+  border: 1px solid grey;
+  font-size: 1em;
+  font-family: Helvetica, sans-serif;
+}
+
+div.titles-table2 {
+  border: 1px solid grey;
+  font-size: 0.95em;
+  font-family: Arial, sans-serif;
+}
+
+p.sig {
+  margin-top: 3em;
+  color: gray;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  #tribute-info {
+    width: 75%;
+  }
+  
+  .img-container{
+    grid-template-columns: 15% 20% 30% 20% 15%;
+  } 
+  
+  .photo:hover {
+  transform: scale(1.6);
+  }
+
+}
