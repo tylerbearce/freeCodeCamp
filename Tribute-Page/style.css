@@ -32,7 +32,7 @@ h1 {
 div.logo{
   grid-area: logo;
   margin-top: 0.5em;
-  background-image: url(https://i.ibb.co/Vt3gHCP/peter-moly.jpg);
+  background-image: url(img/peter-moly.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
