@@ -1,8 +1,8 @@
-# freeCodeCamp/Tribute_Page - TYLER BEARCE
+# freeCodeCamp/Tribute-Page - TYLER BEARCE
 
 
 
-https://tylerbearce.github.io/freeCodeCamp/Tribute_Page/
+https://tylerbearce.github.io/freeCodeCamp/Tribute-Page/
 
 Created with the following technologies:
 * HTML
