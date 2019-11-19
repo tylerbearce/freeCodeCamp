@@ -9,4 +9,6 @@ All roman numerals answers should be provided in upper-case.
 https://tylerbearce.github.io/freeCodeCamp/Roman-Numeral-Converter/
 
 Created with the following technologies:
+* HTML
+* CSS
 * JS

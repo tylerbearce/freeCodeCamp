@@ -16,4 +16,6 @@ We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and 
 https://tylerbearce.github.io/freeCodeCamp/Palindrome-Checker/
 
 Created with the following technologies:
+* HTML
+* CSS
 * JS

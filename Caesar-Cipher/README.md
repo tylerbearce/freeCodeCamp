@@ -14,7 +14,8 @@ All letters will be uppercase. Do not transform any non-alphabetic character (i.
 https://tylerbearce.github.io/freeCodeCamp/Caesar-Cipher/
 
 Created with the following technologies:
+* HTML
+* CSS
 * JS
-
 
  
