@@ -1,4 +1,11 @@
-// FUNCTION: Master function
+/**
+ * JavaScript Algorithms and Data Structures Projects: Roman Numeral Converter
+ * 
+ * Convert the given number into a roman numeral.
+ * 
+ * All roman numerals answers should be provided in upper-case.
+ */
+
 function convertToRoman(num) {
   let finalResult = [];
 
@@ -102,5 +109,5 @@ function convertToRoman(num) {
 // console.log("45 = " + convertToRoman(45));
 // console.log("68 = " + convertToRoman(68));
 // console.log("83 = " + convertToRoman(83));
-//console.log("97 = " + convertToRoman(97));
+// console.log("97 = " + convertToRoman(97));
 // console.log("99 = " + convertToRoman(99));
