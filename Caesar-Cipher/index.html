@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Caesar Cipher</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="Caesar-Cipher.js"></script>
+    </head>
+  
+    <body>
+
+        <div class="aligner">
+            <div class="align-top"></div>
+            <div id="demo" class="align-mid">
+                <h1>Caesar Cipher</h1>
+                <hr>
+                <p>One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher.</p>
+                <p>In a shift cipher the meanings of the letters are shifted by some set amount.</p>
+                <p>A common modern use is the ROT13 cipher, where the values of the letters are shifted by 13 places. Thus 'A' ↔ 'N', 'B' ↔ 'O' and so on.</p>
+                <hr>
+                <form>
+                    <input id="input" type="text" placeholder="Coded Message">
+                    <button type="submit" onclick="changeContent(); return false;" >Decode!</button>
+                </form>
+                <p id="output" on></p>
+            </div>
+            <div class="align-bot">
+                <!-- Footer -->
+                <footer>
+                    <p class="sig">Designed and coded by <a href="https://www.linkedin.com/in/tylerbearce/" target="_blank" style= "color: blue">Tyler Bearce</a> for <a href = "https://www.freecodecamp.org" target="_blank" style= "color: green">Free Code Camp</a> projects.</p>
+                </footer>
+            </div>
+        </div>
+        
+        <script>
+            function changeContent() {
+                var str = document.getElementById('input').value;
+                document.getElementById('output').innerHTML = str + " = " + rot13(str);
+                }
+        </script>
+
+    </body>
+</html>

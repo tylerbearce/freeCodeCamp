@@ -11,7 +11,7 @@
  */
 
 function rot13(str) {
-  let result = str.split("");
+  let result = str.toUpperCase().split("");
 
   for (let i = 0; i < result.length; i++){
     switch (result[i]) {
@@ -101,8 +101,8 @@ function rot13(str) {
 
 
 // Change the inputs below to test
-console.log(rot13("SERR PBQR PNZC")); // should decode to FREE CODE CAMP
-console.log(rot13("SERR CVMMN!"));  // should decode to FREE PIZZA!
-console.log(rot13("SERR YBIR?")); // should decode to FREE LOVE?
-console.log(rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.")); // should decode to THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+// console.log(rot13("SERR PBQR PNZC")); // should decode to FREE CODE CAMP
+// console.log(rot13("SERR CVMMN!"));  // should decode to FREE PIZZA!
+// console.log(rot13("SERR YBIR?")); // should decode to FREE LOVE?
+// console.log(rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.")); // should decode to THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
 
