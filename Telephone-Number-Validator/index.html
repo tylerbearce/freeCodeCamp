@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Telephone Number Validator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="Telephone-Number-Validator.js"></script>
+    </head>
+  
+    <body>
+
+        <div class="aligner">
+            <div class="align-top"></div>
+            <div class="align-mid">
+                <h1>Telephone Number Validator</h1>
+                <hr>
+                <p>Returns true if the input string looks like a valid US phone number.</p>
+                <hr>
+                <form>
+                    <input id="input" type="tel" placeholder="Telephone Number" required>
+                    <button type="submit" onclick="changeContent(); return false;" >Validate!</button>
+                </form>
+                <p id="output" on></p>
+            </div>
+            <div class="align-bot">
+                <!-- Footer -->
+                <footer>
+                    <p class="sig">Designed and coded by <a href="https://www.linkedin.com/in/tylerbearce/" target="_blank" style= "color: blue">Tyler Bearce</a> for <a href = "https://www.freecodecamp.org" target="_blank" style= "color: green">Free Code Camp</a> projects.</p>
+                </footer>
+            </div>
+        </div>
+        
+        <script>
+            function changeContent() {
+                var str = document.getElementById('input').value;
+                document.getElementById('output').innerHTML = str + " = " + telephoneCheck(str);
+                }
+        </script>
+
+    </body>
+</html>
