@@ -1,0 +1,17 @@
+/* User Story #11: The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized. */
+html,body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #e4d2ba;
+    text-align: center;
+  }
+  
+  .mid {
+    background-color: #bda27e;
+  }
+  
+  footer {
+    margin-top: 3em;
+    color: dimgray;
+  }
