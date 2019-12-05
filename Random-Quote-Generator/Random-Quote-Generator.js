@@ -1,11 +1,3 @@
-// User Story #6: On first load, my quote machine displays a random quote in the element with id="text".
-
-// User Story #7: On first load, my quote machine displays the random quote's author in the element with id="author".
-
-// User Story #8: When the #new-quote button is clicked, my quote machine should fetch a new quote and display it in the #text element.
-
-// User Story #9: My quote machine should fetch the new quote's author when the #new-quote button is clicked and display it in the #author element.
-
 // User Story #10: I can tweet the current quote by clicking on the #tweet-quotea element. This a element should include the "twitter.com/intent/tweet" path in its href attribute to tweet the current quote.
 
 const quoteFile = [
@@ -48,6 +40,38 @@ const quoteFile = [
   {
     text: "The healthy human mind doesn't wake up in the morning thinking this is its last day on Earth. But I think that's a luxury, not a curse. To know you're close to the end is a kind of freedom. Good time to take... inventory.",
     author: "Captain Price, Call of Duty: Modern Warfare 2"
+  },
+  {
+    text: "It's a funny thing, ambition. It can take one to sublime heights or harrowing depths. And sometimes they are one and the same.",
+    author: "Emily Kaldwin, Dishonored"
+  },
+  {
+    text: "No gods or kings. Only man.",
+    author: "Andrew Ryan, Bioshock"
+  },
+  {
+    text: "Some trees flourish, others die. Some cattle grow strong, others are taken by wolves. Some men are born rich enough and dumb enough to enjoy their lives. Ain't nothing fair.",
+    author: "John Marston, Red Dead Redemption"
+  },
+  {
+    text: "You can’t break a man the way you break a dog, or a horse. The harder you beat a man, the taller he stands.",
+    author: "The Jackal, Far Cry 2"
+  },
+  {
+    text: "It's time to kick ass and chew bubblegum... and I'm all outta gum.",
+    author: "Duke Nukem, Duke Nukem 3D"
+  },
+  {
+    text: "Life is cruel. Of this I have no doubt. One can only hope that one leaves behind a lasting legacy. But so often, the legacies we leave behind...are not the ones we intended.",
+    author: "Queen Myrrah, Gears of War 2"
+  },
+  {
+    text: "If our lives are already written, it would take a courageous man to change the script.",
+    author: "Alan Wake, Alan Wake"
+  },
+  {
+    text: "It's easy to forget what a sin is in the middle of a battlefield.",
+    author: "Solid Snake, Metal Gear Solid"
   }
 ]
 
@@ -68,6 +92,6 @@ function updateQuote(){
   let quoteAuthor = quoteFile[index].author;
 
   //Update html with quote data.
-  document.getElementById('text').innerHTML = quoteText;
-  document.getElementById('author').innerHTML = quoteAuthor;
+  document.getElementById('text').innerHTML = `"${quoteText}"`;
+  document.getElementById('author').innerHTML = `-${quoteAuthor}`;
 }

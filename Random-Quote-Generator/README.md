@@ -35,3 +35,5 @@ Created with the following technologies:
 * HTML
 * CSS
 * JS
+* Bootstrap
+* Font Awesome

@@ -1,43 +1,38 @@
 <!-- You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and jQuery to complete this project. You should use a frontend framework (like React for example) because this section is about learning frontend frameworks. Additional technologies not listed above are not recommended and using them is at your own risk. We are looking at supporting other frontend frameworks like Angular and Vue, but they are not currently supported. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding! -->
 
-<!-- HEAD -->
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <title>Random Quote Machine</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <script src="Random-Quote-Generator.js"></script>
-  </head>
+
+    <!-- HEAD -->
+    <head>
+        <title>Random Quote Machine</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="Random-Quote-Generator.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </head>
   
-  <!-- BODY -->
-  <body>
-    <div class="container-fluid text-center">
-      <h1>Random Quote Machine</h1>
-      <!-- User Story #1: I can see a wrapper element with a corresponding id="quote-box". -->
-      <div id="quote-box" class="alert-info">  
-        <!-- User Story #2: Within #quote-box, I can see an element with a corresponding id="text". -->
-        <p id="text">-</p>
-          
-        <!-- User Story #3: Within #quote-box, I can see an element with a corresponding id="author". -->
-        <p id="author">-</p>
-          
-        <!-- User Story #4: Within #quote-box, I can see a clickable element with a corresponding id="new-quote". -->
-        <button id="new-quote" onclick="updateQuote()" title="Generate a new quote!">New Quote</button>
-          
-        <!-- User Story #5: Within #quote-box, I can see a clickable a element with a corresponding id="tweet-quote". -->
-        <a id="tweet-quote" href="twitter.com/intent/tweet" title="Tweet this quote!">
-            <i class="fab fa-twitter-square"></i>  
-        </a>
-      </div>
-      <script>updateQuote()</script>
-  
-      <!-- FOOTER -->
-      <footer>
+    <!-- BODY -->
+    <body>
+        <div class="container-fluid text-center">
+            <h1>Random Quote Machine</h1>
+            <div id="quote-box" class="alert-info">  
+                <p id="text">-</p>
+                <p id="author">-</p>
+                <div id="buttons">
+                    <button id="new-quote" class="btn btn-info" onclick="updateQuote()" title="Generate a new quote!">New Quote</button>
+                    <a id="tweet-quote" href="twitter.com/intent/tweet" title="Tweet this quote!">
+                        <i class="fab fa-twitter-square fa-2x"></i>  
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
         <p class="sig">Designed and coded by <a href="https://www.linkedin.com/in/tylerbearce/" target="_blank" style= "color: blue">Tyler Bearce</a> for <a href = "https://www.freecodecamp.org" target="_blank" style= "color: green">Free Code Camp</a> projects.</p>
-      </footer>
-    </div>
-  </body>
+    </footer>
+    <script>updateQuote()</script>
 </html>
