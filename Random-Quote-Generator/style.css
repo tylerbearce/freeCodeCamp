@@ -1,18 +1,25 @@
 html,body {
   height: 100%;
-  background-color: rgb(243, 243, 243);
+  padding: -10px ;
+  background: linear-gradient(45deg, rgb(15, 64, 117), rgb(183, 211, 243));
 }
 
-.background {
-  background-image: url('img/bioshock.jpg');
+.bg-img {
+  background-image: url('https://raw.githubusercontent.com/tylerbearce/freeCodeCamp/master/Random-Quote-Generator/img/alan-wake.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-color: black;
 }
 
 #wrapper {
   padding-top: 5em;
+  height: 100%;
+}
+
+#quote-box {
+  border-color: black;
+  box-shadow: 0 8px 8px black;
+  opacity: 0.94;
 }
 
 #quote-text {
@@ -26,12 +33,6 @@ html,body {
 #author {
   padding-right: 1em;
   font-family: fantasy;
-}
-
-.panel {
-  border-color: black;
-  box-shadow: 0 8px 8px black;
-  opacity: 0.94;
 }
 
 footer {

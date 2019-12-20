@@ -20,7 +20,7 @@ function updateQuote(){
   //Updates html with new quote data.
   document.getElementById('text').innerHTML = `<i class="fa fa-quote-left"></i> ${quoteText}`;
   document.getElementById('author').innerHTML = `- ${quoteAuthor}`;
-  document.body.style.backgroundImage = `url(${quoteImage})`;
+  document.getElementById('wrapper').style.backgroundImage = `url(${quoteImage})`;
   document.getElementById('tweet-quote').setAttribute("href", tweetUrl);
 }
 
