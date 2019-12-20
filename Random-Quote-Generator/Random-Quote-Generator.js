@@ -1,4 +1,26 @@
-// User Story #10: I can tweet the current quote by clicking on the #tweet-quotea element. This a element should include the "twitter.com/intent/tweet" path in its href attribute to tweet the current quote.
+let index, quoteText, quoteAuthor, tweetUrl;
+let twitterUrl = "https://twitter.com/intent/tweet?text="
+
+function updateQuote(){
+  //Generate a new quote.
+  let newIndex = Math.floor(Math.random() * quoteFile.length);
+  
+  //Make sure the generated quote is not the same as the previous quote.
+  while (newIndex == index) {
+    newIndex = Math.floor(Math.random() * quoteFile.length);
+  }
+
+  //Update variables with new quote data.
+  index = newIndex;
+  quoteText = quoteFile[index].text;
+  quoteAuthor = quoteFile[index].author;
+  tweetUrl = `${twitterUrl}${quoteText} - ${quoteAuthor}`;
+
+  //Update html with quote data.
+  document.getElementById('text').innerHTML = `"${quoteText}"`;
+  document.getElementById('author').innerHTML = `-${quoteAuthor}`;
+  document.getElementById('tweet-quote').setAttribute("href", tweetUrl);
+}
 
 const quoteFile = [
    {
@@ -20,10 +42,6 @@ const quoteFile = [
   {
     text: "Stand in the ashes of a trillion dead souls, and asks the ghosts if honor matters. The silence is your answer.",
     author: "Javik, Mass Effect 3"
-  },
-  {
-    text: "Bring me a bucket, and I'll show you a bucket!",
-    author: "Psycho, Borderlands 2"
   },
   {
     text: "Wanting something does not give you the right to have it.",
@@ -54,7 +72,7 @@ const quoteFile = [
     author: "John Marston, Red Dead Redemption"
   },
   {
-    text: "You can’t break a man the way you break a dog, or a horse. The harder you beat a man, the taller he stands.",
+    text: "You can't break a man the way you break a dog, or a horse. The harder you beat a man, the taller he stands.",
     author: "The Jackal, Far Cry 2"
   },
   {
@@ -73,25 +91,4 @@ const quoteFile = [
     text: "It's easy to forget what a sin is in the middle of a battlefield.",
     author: "Solid Snake, Metal Gear Solid"
   }
-]
-
-var index;
-
-function updateQuote(){
-  //Generate a new quote.
-  let newIndex = Math.floor(Math.random() * quoteFile.length);
-  
-  //Make sure the generated quote is not the same as the previous quote.
-  while (newIndex == index) {
-    newIndex = Math.floor(Math.random() * quoteFile.length);
-  }
-
-  //Update variables with new quote data.
-  index = newIndex;
-  let quoteText = quoteFile[index].text;
-  let quoteAuthor = quoteFile[index].author;
-
-  //Update html with quote data.
-  document.getElementById('text').innerHTML = `"${quoteText}"`;
-  document.getElementById('author').innerHTML = `-${quoteAuthor}`;
-}
+];
