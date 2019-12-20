@@ -14,16 +14,20 @@
     </head>
   
     <!-- BODY -->
-    <body>
-        <div class="container-fluid text-center">
-            <h1>Random Quote Machine</h1>
-            <div id="quote-box" class="alert-info">  
-                <p id="text" style="font-size: 1.5em">-</p>
-                <p id="author">-</p>
-                <div id="buttons">
-                    <button id="new-quote" class="btn btn-info" onclick="updateQuote()" title="Generate a new quote!">New Quote</button>
-                    <a id="tweet-quote" href="#" title="Tweet this quote!" target="_blank">
-                        <i class="fab fa-twitter-square fa-2x btn"></i>  
+    <body class="background">
+        <div id="wrapper" class="text-center container">     
+            <div id="quote-box" class="panel panel-info">
+                <div class="panel-heading">
+                    <h1>Random Quote Machine</h1>
+                </div>
+                <div id="quote-text" class="panel-body text-primary">
+                    <p id="text" class="h3">-</p>
+                </div>
+                <p id="author" class="h4 text-right text-info">-</p>    
+                <div id="buttons" class="panel-heading">            
+                    <button id="new-quote" class="btn btn-primary" onclick="updateQuote()" title="Generate a new quote!">Generate Quote</button>
+                    <a id="tweet-quote" class="btn btn-info" href="#" title="Tweet this quote!" target="_blank">
+                        <i class="fab fa-twitter"></i>  
                     </a>
                 </div>
             </div>
@@ -32,7 +36,12 @@
 
     <!-- FOOTER -->
     <footer class="text-center">
-        <p class="sig">Designed and coded by <a href="https://www.linkedin.com/in/tylerbearce/" target="_blank" style= "color: blue">Tyler Bearce</a> for <a href = "https://www.freecodecamp.org" target="_blank" style= "color: green">Free Code Camp</a> projects.</p>
+        <p class="sig">Designed and coded by
+            <a href="https://www.linkedin.com/in/tylerbearce/" target="_blank" style= "color: cyan">Tyler Bearce</a>
+            for 
+            <a href = "https://www.freecodecamp.org" target="_blank" style= "color: lightgreen">Free Code Camp</a>
+            projects.
+        </p>
     </footer>
     <script>updateQuote()</script>
 </html>
