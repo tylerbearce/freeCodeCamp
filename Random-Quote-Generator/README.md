@@ -37,3 +37,4 @@ Created with the following technologies:
 * JS
 * Bootstrap
 * Font Awesome
+* jQuery

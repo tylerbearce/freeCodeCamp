@@ -11,6 +11,12 @@
         <link rel="stylesheet" href="style.css">
         <script src="Random-Quote-Generator.js"></script>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            updateQuote();
+          });
+        </script>
     </head>
   
     <!-- BODY -->
@@ -32,16 +38,15 @@
                 </div>
             </div>
         </div>
+        
+        <!-- FOOTER -->
+        <footer class="text-center">
+            <p class="sig">Designed and coded by
+                <a href="https://www.linkedin.com/in/tylerbearce/" target="_blank" style= "color: cyan">Tyler Bearce</a>
+                for 
+                <a href = "https://www.freecodecamp.org" target="_blank" style= "color: lightgreen">Free Code Camp</a>
+                projects.
+            </p>
+        </footer>
     </body>
-
-    <!-- FOOTER -->
-    <footer class="text-center">
-        <p class="sig">Designed and coded by
-            <a href="https://www.linkedin.com/in/tylerbearce/" target="_blank" style= "color: cyan">Tyler Bearce</a>
-            for 
-            <a href = "https://www.freecodecamp.org" target="_blank" style= "color: lightgreen">Free Code Camp</a>
-            projects.
-        </p>
-    </footer>
-    <script>updateQuote()</script>
 </html>

@@ -2,22 +2,22 @@ let index, quoteText, quoteAuthor, tweetUrl;
 let twitterUrl = "https://twitter.com/intent/tweet?text="
 
 function updateQuote(){
-  //Generate a new quote.
+  //Generates a new quote.
   let newIndex = Math.floor(Math.random() * quoteFile.length);
   
-  //Make sure the generated quote is not the same as the previous quote.
+  //Makes sure the generated quote is not the same as the previous quote.
   while (newIndex == index) {
     newIndex = Math.floor(Math.random() * quoteFile.length);
   }
 
-  //Update variables with new quote data.
+  //Updates variables with new quote data.
   index = newIndex;
   quoteText = quoteFile[index].text;
   quoteAuthor = quoteFile[index].author;
   quoteImage = quoteFile[index].image;
   tweetUrl = `${twitterUrl}${quoteText} - ${quoteAuthor}`;
 
-  //Update html with quote data.
+  //Updates html with new quote data.
   document.getElementById('text').innerHTML = `<i class="fa fa-quote-left"></i> ${quoteText}`;
   document.getElementById('author').innerHTML = `- ${quoteAuthor}`;
   document.body.style.backgroundImage = `url(${quoteImage})`;
