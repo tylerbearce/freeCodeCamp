@@ -1,7 +1,7 @@
 html,body {
   height: 100%;
   padding: -10px ;
-  background: linear-gradient(45deg, rgb(15, 64, 117), rgb(183, 211, 243));
+  /* background: linear-gradient(45deg, rgb(15, 64, 117), rgb(183, 211, 243)); */
 }
 
 .bg-img {
@@ -41,5 +41,24 @@ footer {
   padding-bottom: 1em;
   color: lightgray;
   text-shadow: 1px 1px 3px black;
-  /* background: linear-gradient(135deg, rgb(183, 211, 243), rgb(15, 64, 117)); */
+}
+
+.lg-grey {
+  background: linear-gradient(45deg, black, white);
+}
+
+.lg-green {
+  background: linear-gradient(45deg, green, white);
+}
+
+.lg-blue {
+  background: linear-gradient(45deg, blue, white);
+}
+
+.lg-yellow {
+  background: linear-gradient(45deg, yellow, white);
+}
+
+.lg-red {
+  background: linear-gradient(45deg, red, white);
 }

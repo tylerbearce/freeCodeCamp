@@ -1,11 +1,11 @@
 let index, quoteText, quoteAuthor, quoteImage, quoteColor, tweetUrl;
 let twitterUrl = "https://twitter.com/intent/tweet?text="
-const grey = "panel-default";
-const green = "panel-success";
-const blue = "panel-info";
-const yellow = "panel-warning";
-const red = "panel-danger";
-let quoteClassPrev = grey;
+const grey = ["panel-default", "lg-grey"];
+const green = ["panel-success", "lg-green"];
+const blue = ["panel-info", "lg-blue"];
+const yellow = ["panel-warning", "lg-yellow"];
+const red = ["panel-danger", "lg-red"];
+let quoteColorPrev = grey;
 
 function updateQuote(){
   //Generates a new quote.
@@ -39,32 +39,42 @@ function updateQuote(){
 
   document.getElementById('tweet-quote').setAttribute("href", tweetUrl);
 
-  switch (quoteColor) {
-    case grey:
-      $("#quote-box").removeClass(quoteClassPrev).addClass(grey);
-      quoteClassPrev = grey;
-      break;
-    case green:
-      $("#quote-box").removeClass(quoteClassPrev).addClass(green);
-      quoteClassPrev = green;
-      break;
-    case blue:
-      $("#quote-box").removeClass(quoteClassPrev).addClass(blue);
-      quoteClassPrev = blue;
-      break;
-    case yellow:
-      $("#quote-box").removeClass(quoteClassPrev).addClass(yellow);
-      quoteClassPrev = yellow;
-      break;
-    case red:
-      $("#quote-box").removeClass(quoteClassPrev).addClass(red);
-      quoteClassPrev = red;
-      break;
-    default:
-      $("#quote-box").removeClass(quoteClassPrev).addClass(blue);
-      quoteClassPrev = blue;
-      break;
-  }
+  $("#quote-box").removeClass(quoteColorPrev[0]).addClass(quoteColor[0]);
+  $("html, body").removeClass(quoteColorPrev[1]).addClass(quoteColor[1]);
+  quoteColorPrev = quoteColor;
+
+  // switch (quoteColor) {
+  //   case grey:
+  //     $("#quote-box").removeClass(quoteColorPrev[0]).addClass(quoteColor[0]);
+  //     $("html, body").removeClass(quoteColorPrev[1]).addClass(quoteColor[1]);
+  //     quoteColorPrev = quoteColor;
+  //     break;
+  //   case green:
+  //     $("#quote-box").removeClass(quoteClassPrev[0]).addClass(quoteColor[0]);
+  //     $("html, body").removeClass(quoteClassPrev[1]).addClass(quoteColor[1]);
+  //     quoteClassPrev = green;
+  //     break;
+  //   case blue:
+  //     $("#quote-box").removeClass(quoteClassPrev[0]).addClass(blue[0]);
+  //     $("html, body").removeClass(quoteClassPrev[1]).addClass(grey[1]);
+  //     quoteClassPrev = blue;
+  //     break;
+  //   case yellow:
+  //     $("#quote-box").removeClass(quoteClassPrev[0]).addClass(yellow[0]);
+  //     $("html, body").removeClass(quoteClassPrev[1]).addClass(grey[1]);
+  //     quoteClassPrev = yellow;
+  //     break;
+  //   case red:
+  //     $("#quote-box").removeClass(quoteClassPrev[0]).addClass(red[0]);
+  //     $("html, body").removeClass(quoteClassPrev[1]).addClass(grey[1]);
+  //     quoteClassPrev = red;
+  //     break;
+  //   default:
+  //     $("#quote-box").removeClass(quoteClassPrev[0]).addClass(grey[0]);
+  //     $("html, body").removeClass(quoteClassPrev[1]).addClass(grey[1]);
+  //     quoteClassPrev = grey;
+  //     break;
+  // }
   
 }
 
