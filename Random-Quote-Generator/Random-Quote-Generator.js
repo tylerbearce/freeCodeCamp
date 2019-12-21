@@ -18,9 +18,20 @@ function updateQuote(){
   tweetUrl = `${twitterUrl}${quoteText} - ${quoteAuthor}`;
 
   //Updates html with new quote data.
-  document.getElementById('text').innerHTML = `<i class="fa fa-quote-left"></i> ${quoteText}`;
-  document.getElementById('author').innerHTML = `- ${quoteAuthor}`;
-  document.getElementById('wrapper').style.backgroundImage = `url(${quoteImage})`;
+  $("#text").fadeOut(function() {
+    $(this).html(`<i class="fa fa-quote-left"></i> ${quoteText}`)
+  }).fadeIn();
+
+  $("#author").fadeOut("slow", function() {
+    $(this).text(`- ${quoteAuthor}`)
+  }).fadeIn();
+
+  // document.getElementById('bg-img').style.backgroundImage = `url(${quoteImage})`;
+  
+  $("#bg-img").fadeOut(function () {
+    $(this).css("background-image", `url(${quoteImage})`)
+  }).fadeIn();
+
   document.getElementById('tweet-quote').setAttribute("href", tweetUrl);
 }
 

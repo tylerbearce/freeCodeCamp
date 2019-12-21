@@ -5,15 +5,16 @@ html,body {
 }
 
 .bg-img {
-  background-image: url('https://raw.githubusercontent.com/tylerbearce/freeCodeCamp/master/Random-Quote-Generator/img/alan-wake.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+  min-height: 100%;
+  position: center;
 }
 
 #wrapper {
-  padding-top: 5em;
-  min-height: 100%;
+  position: center;
+  margin-top: -95vh;
 }
 
 #quote-box {
@@ -40,5 +41,5 @@ footer {
   padding-bottom: 1em;
   color: lightgray;
   text-shadow: 1px 1px 3px black;
-  background: linear-gradient(135deg, rgb(183, 211, 243), rgb(15, 64, 117));
+  /* background: linear-gradient(135deg, rgb(183, 211, 243), rgb(15, 64, 117)); */
 }

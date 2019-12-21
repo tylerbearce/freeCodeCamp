@@ -21,25 +21,33 @@
   
     <!-- BODY -->
     <body>
-        <div id="wrapper" class="text-center container bg-img">     
+            <div id="bg-img" class="bg-img">     
+            
+        </div>
+
+        <div id="wrapper" class="text-center container"> 
             <div id="quote-box" class="panel panel-info">
                 <div class="panel-heading">
                     <h1>Random Quote Machine</h1>
                 </div>
                 <div id="quote-text" class="panel-body text-primary">
-                    <p id="text" class="h3">-</p>
+                    <p id="text" class="h3"></p>
                 </div>
-                <p id="author" class="h4 text-right text-info">-</p>    
+                <p id="author" class="h4 text-right text-info"></p>    
                 <div id="buttons" class="panel-heading">            
                     <button id="new-quote" class="btn btn-primary" onclick="updateQuote()" title="Generate a new quote!">Generate Quote</button>
                     <a id="tweet-quote" class="btn btn-info" href="#" title="Tweet this quote!" target="_blank">
                         <i class="fab fa-twitter"></i>  
                     </a>
                 </div>
-            </div>
+            </div>    
+            
         </div>
+
+        
+        
         <!-- FOOTER -->
-        <footer class="text-center footer">
+        <footer class="text-center navbar-fixed-bottom">
             <p class="sig">Designed and coded by
                 <a href="https://www.linkedin.com/in/tylerbearce/" target="_blank" style= "color: cyan">Tyler Bearce</a>
                 for 
