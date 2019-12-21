@@ -1,11 +1,11 @@
 let index, quoteText, quoteAuthor, quoteImage, quoteColor, tweetUrl;
 let twitterUrl = "https://twitter.com/intent/tweet?text="
-const grey = ["panel-default", "lg-grey"];
+const black = ["panel-default", "lg-black"];
 const green = ["panel-success", "lg-green"];
 const blue = ["panel-info", "lg-blue"];
 const yellow = ["panel-warning", "lg-yellow"];
 const red = ["panel-danger", "lg-red"];
-let quoteColorPrev = grey;
+let quoteColorPrev = black;
 
 function updateQuote(){
   //Generates a new quote.
@@ -42,40 +42,6 @@ function updateQuote(){
   $("#quote-box").removeClass(quoteColorPrev[0]).addClass(quoteColor[0]);
   $("html, body").removeClass(quoteColorPrev[1]).addClass(quoteColor[1]);
   quoteColorPrev = quoteColor;
-
-  // switch (quoteColor) {
-  //   case grey:
-  //     $("#quote-box").removeClass(quoteColorPrev[0]).addClass(quoteColor[0]);
-  //     $("html, body").removeClass(quoteColorPrev[1]).addClass(quoteColor[1]);
-  //     quoteColorPrev = quoteColor;
-  //     break;
-  //   case green:
-  //     $("#quote-box").removeClass(quoteClassPrev[0]).addClass(quoteColor[0]);
-  //     $("html, body").removeClass(quoteClassPrev[1]).addClass(quoteColor[1]);
-  //     quoteClassPrev = green;
-  //     break;
-  //   case blue:
-  //     $("#quote-box").removeClass(quoteClassPrev[0]).addClass(blue[0]);
-  //     $("html, body").removeClass(quoteClassPrev[1]).addClass(grey[1]);
-  //     quoteClassPrev = blue;
-  //     break;
-  //   case yellow:
-  //     $("#quote-box").removeClass(quoteClassPrev[0]).addClass(yellow[0]);
-  //     $("html, body").removeClass(quoteClassPrev[1]).addClass(grey[1]);
-  //     quoteClassPrev = yellow;
-  //     break;
-  //   case red:
-  //     $("#quote-box").removeClass(quoteClassPrev[0]).addClass(red[0]);
-  //     $("html, body").removeClass(quoteClassPrev[1]).addClass(grey[1]);
-  //     quoteClassPrev = red;
-  //     break;
-  //   default:
-  //     $("#quote-box").removeClass(quoteClassPrev[0]).addClass(grey[0]);
-  //     $("html, body").removeClass(quoteClassPrev[1]).addClass(grey[1]);
-  //     quoteClassPrev = grey;
-  //     break;
-  // }
-  
 }
 
 const quoteFile = [
@@ -95,13 +61,13 @@ const quoteFile = [
     text: "Get over here!",
     author: "Scorpion, Mortal Kombat",
     image: "img/mortal-kombat.png",
-    color: red
+    color: black
   },
   {
     text: "What is better? To be born good or to overcome your evil nature through great effort?",
     author: "Paarthurnax, Elder Scrolls V: Skyrim",
     image: "img/skyrim.png",
-    color: grey
+    color: black
   },
   {
     text: "The right man in the wrong place can make all the difference in the world.",
@@ -143,7 +109,7 @@ const quoteFile = [
     text: "It's a funny thing, ambition. It can take one to sublime heights or harrowing depths. And sometimes they are one and the same.",
     author: "Emily Kaldwin, Dishonored",
     image: "img/dishonored.jpg",
-    color: grey
+    color: black
   },
   {
     text: "Some trees flourish, others die. Some cattle grow strong, others are taken by wolves. Some men are born rich enough and dumb enough to enjoy their lives. Ain't nothing fair.",
@@ -173,12 +139,12 @@ const quoteFile = [
     text: "If our lives are already written, it would take a courageous man to change the script.",
     author: "Alan Wake, Alan Wake",
     image: "img/alan-wake.jpg",
-    color: blue
+    color: black
   },
   {
     text: "It's easy to forget what a sin is in the middle of a battlefield.",
     author: "Solid Snake, Metal Gear Solid",
     image: "img/metal-gear-solid.png",
-    color: grey
+    color: black
   }
 ];

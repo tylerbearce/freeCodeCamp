@@ -43,22 +43,22 @@ footer {
   text-shadow: 1px 1px 3px black;
 }
 
-.lg-grey {
+.lg-black {
   background: linear-gradient(45deg, black, white);
 }
 
 .lg-green {
-  background: linear-gradient(45deg, green, white);
+  background: linear-gradient(45deg, darkgreen, white);
 }
 
 .lg-blue {
-  background: linear-gradient(45deg, blue, white);
+  background: linear-gradient(45deg, dodgerblue, white);
 }
 
 .lg-yellow {
-  background: linear-gradient(45deg, yellow, white);
+  background: linear-gradient(45deg, gold, white);
 }
 
 .lg-red {
-  background: linear-gradient(45deg, red, white);
+  background: linear-gradient(45deg, darkred, white);
 }
