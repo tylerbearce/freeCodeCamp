@@ -1,7 +1,7 @@
 <!-- You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and jQuery to complete this project. You should use a frontend framework (like React for example) because this section is about learning frontend frameworks. Additional technologies not listed above are not recommended and using them is at your own risk. We are looking at supporting other frontend frameworks like Angular and Vue, but they are not currently supported. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding! -->
 
 <!DOCTYPE html>
-<html lang='en' class="lg-grey">
+<html lang='en' class="lg-black">
 
     <!-- HEAD -->
     <head>
@@ -11,11 +11,11 @@
         <link rel="stylesheet" href="style.css">
         <script src="Random-Quote-Generator.js"></script>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script>
-          $(document).ready(function() {
-            updateQuote();
-          });
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script>        
+            $(document).ready(function() {
+                getQuotes();
+            });
         </script>
     </head>
   
