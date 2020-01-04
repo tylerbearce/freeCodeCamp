@@ -38,3 +38,4 @@ Created with the following technologies:
 * Bootstrap
 * Font Awesome
 * jQuery
+* JSON
