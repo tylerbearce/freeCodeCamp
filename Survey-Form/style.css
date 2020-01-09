@@ -1,4 +1,34 @@
-body {
+html,body {
   background-color: #BBB;
   text-align: center;
+  background-image: url(img/grey-carpet-texture.jpg);
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  background-image: url(img/wood-floor.jpg);
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  margin-top: -1em;
+  padding-top: 1em;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  width: 70%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: none;
+  align-content: left;
 }
