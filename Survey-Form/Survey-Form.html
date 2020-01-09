@@ -9,59 +9,67 @@
 <body>
 	<div class="wrapper">
 		<h1 id=title>Ron Swanson's Flooring Emporium</h1>
-		<h2 id=title>User Survey</h2><hr>
-		<p id=description>This is a survey form for something.</p><hr>
+		<h2 id=title>User Survey</h2>
+		<p id=description>Submit the Form Below to Get an Instant Quote!</p><hr>
 
 		<!--Survey Form-->
 		<form id=survey-form>	
-			
-			<!--Dropdown-->
-			<label id="dropdown-label" for="dropdown">Dropdown:
-				<select id="dropdown">
-				<option value="option1">Option 1</option>
-				<option value="option2">Option 2</option>
-				<option value="option3">Option 3</option>
-				</select>
-			</label><br>
-
-			<!--Radio Buttons-->
-			<div class="grid">
-			Choose a type of flooring:<br>
-				<label for="radio1">
-					<input id="radio1" type="radio" name="radio-choice" value="choice 1">Carpet
-				</label><br>
-				<label for="radio2">
-					<input id="radio2" type="radio" name="radio-choice" value="choice 2">Hardwood
-				</label><br>
-				<label for="radio3">
-					<input id="radio3" type="radio" name="radio-choice" value="choice 3">Vinyl Linoleum
-				</label><br>
-				<label for="radio4">
-					<input id="radio4" type="radio" name="radio-choice" value="choice 3">Laminate
-				</label><br>
-				<label for="radio5">
-					<input id="radio5" type="radio" name="radio-choice" value="choice 3">Tile
-				</label><br>
-			</div>
 
 			<!--Check Boxes-->
-			<label for="check1">Check Boxes:
-				<input id="check1" type="checkbox" name="check-choice" value="choice 1">Check 1
+			<h3>Which types of flooring are you interested in?</h3>
+			<div class="grid">
+				<label for="check1">
+					<input id="check1" type="checkbox" name="check-choice" value="Carpet">Carpet
+				</label>
+				<label for="check2">
+					<input id="check2" type="checkbox" name="check-choice" value="Hardwood">Hardwood
+				</label>
+				<label for="check3">
+					<input id="check3" type="checkbox" name="check-choice" value="Vinyl Linoleum">Vinyl Linoleum
+				</label>
+				<label for="check4">
+					<input id="check4" type="checkbox" name="check-choice" value="Laminate">Laminate
+				</label>
+				<label for="check5">
+					<input id="check5" type="checkbox" name="check-choice" value="Tile">Tile
+				</label>
+			</div><br>
+
+			<!--Radio Buttons-->
+			<h3>What is the nature of your flooring project?</h3>
+			<div class="grid">
+				<label for="radio1">
+					<input id="radio1" type="radio" name="radio-choice" value="Install New Flooring">Install New Flooring
+				</label>
+				<label for="radio2">
+					<input id="radio2" type="radio" name="radio-choice" value="Repair Existing Flooring">Repair Existing Flooring
+				</label>
+				<label for="radio3">
+					<input id="radio3" type="radio" name="radio-choice" value="Refinish Existing Flooring">Refinish Existing Flooring
+				</label>
+			</div><br>
+			
+			<!--Dropdown-->
+			<h3>Do you own your own home?</h3>
+			<div class="grid">
+			<label id="dropdown-label" for="dropdown">
+				<select id="dropdown">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+				<option value="No, But Authorized to Make Changes">No, But Authorized to Make Changes</option>
+				</select>
 			</label>
-			<label for="check2">
-				<input id="check2" type="checkbox" name="check-choice" value="choice 2">Check 2
-			</label>
-			<label for="check3">
-				<input id="check3" type="checkbox" name="check-choice" value="choice 3">Check 3
-			</label><br>
+			</div><br>
 
 			<!--Additional Comments-->
-			<label for="textarea">Additional Comments:
-				<textarea>Enter Comments</textarea>
+			<h3>Additional Comments</h3>
+			<label for="textarea">
+				<textarea rows="5" cols="50">Enter Comments</textarea>
 			</label><br><hr>
 
 			<!--User Info-->
-			<div class="user-info">
+			<h3>Contact Information</h3>
+			<div class="grid">
 				<label id="name-label" for="name">Full Name:
 					<input id="name" type="text" required placeholder="Full Name">
 				</label><br>
@@ -71,12 +79,11 @@
 				<label id="number-label" for="number">Phone Number:
 					<input id="number" type="number" min="1000000" max="9999999" placeholder="Phone #">
 				</label></br>
-			</div><hr>
-
-			<!--Submit Button-->
+				<!--Submit Button-->
+			</div><br>
 			<input id="submit" type="submit">
-		</form><hr>
-
+		</form>
+		<hr>
 		<!-- Signature -->
 		<div>
 		<p class="sig">Designed and coded by <a href="https://www.linkedin.com/in/tylerbearce/" target="_blank" style= "color: blue">Tyler Bearce</a> for <a href = "https://www.freecodecamp.org" target="_blank" style= "color: green">Free Code Camp</a> projects.</p>
