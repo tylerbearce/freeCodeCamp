@@ -36,7 +36,7 @@ div.logo{
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 70%;
+  background-size: 65%;
   margin: auto;
 }
 
@@ -136,6 +136,7 @@ h2{
 }
 
 .photo{
+  max-width: 90%;
   text-align: center;
   display: block;
   margin: auto;
@@ -151,29 +152,36 @@ h2{
 }
 
 div.shipped-titles {
-  display: flex;
   display: grid;
-  grid-template-columns: repeat(9, 11%);
-  grid-template-rows: repeat(2, 50%);
-  grid-area: games1;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(18, 11%);
   padding: 1em;
+  max-width: 40em;
+  margin: auto;
+}
+
+div.header-table {
+  margin-top: -1px;
+  margin-right: -1px;
+  font-size: 1em;
+  font-family: Helvetica, sans-serif;
+  background-color: black;
+  color: lightgrey;
 }
 
 div.titles-table {
+  margin-top: -1px;
+  margin-right: -1px;
+  font-size: 1em;
+  font-family: Helvetica, sans-serif;
   border: 1px solid grey;
   margin-top: -1px;
   margin-right: -1px;
   font-size: 1em;
   font-family: Helvetica, sans-serif;
+  background-color: gainsboro;
 }
 
-div.titles-table2 {
-  border: 1px solid grey;
-  margin-top: -1px;
-  margin-right: -1px;
-  font-size: 0.95em;
-  font-family: Arial, sans-serif;
-}
 
 p.sig {
   margin-top: 3em;
